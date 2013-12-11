@@ -15,25 +15,25 @@ use vars qw( %Lexicon );
 %Lexicon = (
 
 ## plugins/FormattedText/config.yaml
-	'Manage boilerplate.' => '定型文を管理します。',
+	'Manage boilerplate.' => '管理樣本',
 
 ## plugins/FormattedText/lib/FormattedText/App.pm
-	'Are you sure you want to delete the selected boilerplates?' => '定型文を削除してもよろしいですか？',
-	'My Boilerplate' => '自分の定型文',
+	'Are you sure you want to delete the selected boilerplates?' => '您確認要刪除選中的樣本？',
+	'My Boilerplate' => '我的樣本',
 
 ## plugins/FormattedText/lib/FormattedText/FormattedText.pm
-	'Boilerplates' => '定型文',
-	'The boilerplate \'[_1]\' is already in use in this blog.' => '[_1]という定型文は既にこのブログに存在しています。',
+	'Boilerplates' => '樣本',
+	'The boilerplate \'[_1]\' is already in use in this blog.' => '在這個網誌中，樣本[_1]已經被使用。',
 
 ## plugins/FormattedText/tmpl/cms/edit_formatted_text.tmpl
-	'Edit Boilerplate' => '定型文の編集',
-	'Create Boilerplate' => '定型文の作成',
-	'This boilerplate has been saved.' => '定型文を保存しました。',
-	'Save changes to this boilerplate (s)' => '定型文への変更を保存 (s)',
-	q{The boilerplate '[_1]' is already in use in this blog.} => q{[_1]という定型文は既にこのブログに存在しています。},
+	'Edit Boilerplate' => '編輯樣本',
+	'Create Boilerplate' => '新增樣本',
+	'This boilerplate has been saved.' => '樣本已經成功保存。',
+	'Save changes to this boilerplate (s)' => '保存這些樣本的變更 (s)',
+	q{The boilerplate '[_1]' is already in use in this blog.} => q{在這個網誌中，樣本[_1]已經被使用。},
 
 ## plugins/FormattedText/tmpl/cms/list_formatted_text.tmpl
-	'The boilerplate has been deleted from the database.' => '定型文を削除しました',
+	'The boilerplate has been deleted from the database.' => '此樣本已經從資料庫中刪除',
 
 );
 
