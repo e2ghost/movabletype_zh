@@ -6887,7 +6887,7 @@ __END__
 
 =head1 NAME
 
-MT::L10N::ja - Japanese localization support for Movable Type
+MT::L10N::zh_cn - PRC Chinese localization support for Movable Type
 
 =head1 AUTHOR & COPYRIGHT
 
