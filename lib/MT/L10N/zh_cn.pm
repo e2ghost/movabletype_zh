@@ -1693,11 +1693,11 @@ use vars qw( @ISA %Lexicon );
 	'Blog \'[_1]\' (ID:[_2]) moved from \'[_3]\' to \'[_4]\' by \'[_5]\'' => 'ブログ「[_1]」(ID:[_2])を[_3]から[_4]に移しました',
 
 ## lib/MT/Category.pm
-	'[quant,_1,entry,entries,No entries]' => '記事[quant,_1,件,件,0 件]',
-	'[quant,_1,page,pages,No pages]' => 'ページ[quant,_1,件,件,0 件]',
-	'Categories must exist within the same blog' => 'カテゴリは親となるカテゴリと同じブログに作らなければなりません。',
-	'Category loop detected' => 'カテゴリがお互いに親と子の関係になっています。',
-	'Parent' => '親カテゴリ',
+	'[quant,_1,entry,entries,No entries]' => '[quant,_1,篇,篇,无]文章',
+	'[quant,_1,page,pages,No pages]' => '[quant,_1,个,个,无]页面',
+	'Categories must exist within the same blog' => '同一博客中不能有相同的分类',
+	'Category loop detected' => '分类循环检测',
+	'Parent' => '上级',
 
 ## lib/MT/Comment.pm
 	'Comment' => '评论',
@@ -4296,40 +4296,40 @@ use vars qw( @ISA %Lexicon );
 	'_FILTER_DATE_DAYS' => 'が[_1]',
 
 ## tmpl/cms/include/blog_table.tmpl
-	'Some templates were not refreshed.' => '初期化できないテンプレートがありました。',
-	'Delete selected [_1] (x)' => '選択された[_1]を削除 (x)',
-	'[_1] Name' => '[_1]名',
+	'Some templates were not refreshed.' => '无法刷新某些模板。',
+	'Delete selected [_1] (x)' => '删除选中的[_1](x)',
+	'[_1] Name' => '[_1]的名称',
 
 ## tmpl/cms/include/category_selector.tmpl
-	'Add sub category' => 'サブカテゴリを追加',
-	'Add sub folder' => 'サブフォルダを追加',
+	'Add sub category' => '添加子分类',
+	'Add sub folder' => '添加子文件夹',
 
 ## tmpl/cms/include/comment_detail.tmpl
 
 ## tmpl/cms/include/comment_table.tmpl
-	'Publish selected comments (a)' => '選択されたコメントを再構築 (a)',
-	'Delete selected comments (x)' => '選択されたコメントを削除 (x)',
-	'Edit this comment' => 'このコメントを編集',
-	'([quant,_1,reply,replies])' => '(返信数 [_1])',
-	'Blocked' => '禁止中',
-	'Edit this [_1] commenter' => 'このコメント投稿者([_1])を編集',
-	'Search for comments by this commenter' => 'このコメント投稿者のコメントを検索',
-	'View this entry' => '記事を表示',
-	'View this page' => 'ウェブページを表示',
-	'Search for all comments from this IP address' => 'このIPアドレスからのすべてのコメントを検索',
-	'to republish' => '再構築',
+	'Publish selected comments (a)' => '发布选中的评论(a)',
+	'Delete selected comments (x)' => '删除选中的评论(x)',
+	'Edit this comment' => '编辑这条评论',
+	'([quant,_1,reply,replies])' => '(回复数量[_1])',
+	'Blocked' => '被封禁的',
+	'Edit this [_1] commenter' => '编辑评论者[_1]',
+	'Search for comments by this commenter' => '搜索该评论者的评论',
+	'View this entry' => '查看文章',
+	'View this page' => '查看页面',
+	'Search for all comments from this IP address' => '搜索来自此IP地址的所有评论',
+	'to republish' => '重新发布',
 
 ## tmpl/cms/include/commenter_table.tmpl
-	'Last Commented' => '最近のコメント',
-	'Edit this commenter' => 'このコメント投稿者を編集',
-	'View this commenter&rsquo;s profile' => 'このコメント投稿者のユーザー情報を見る',
+	'Last Commented' => '最近评论',
+	'Edit this commenter' => '编辑这个评论者',
+	'View this commenter&rsquo;s profile' => '查看这个评论者的档案',
 
 ## tmpl/cms/include/copyright.tmpl
-	'Copyright &copy; 2001 Six Apart. All Rights Reserved.' => 'Copyright &copy; 2001 Six Apart. All Rights Reserved.',
+	'Copyright &copy; 2001 Six Apart. All Rights Reserved.' => 'Copyright &copy; 2001 Six Apart. All Rights Reserved.  Translated by <a href="http://www.45eggs.com" target="_blank">肆无忌惮</a>.',
 
 ## tmpl/cms/include/debug_hover.tmpl
-	'Hide Toolbar' => 'Hide Toolbar',
-	'Hide &raquo;' => 'Hide &raquo;',
+	'Hide Toolbar' => '隐藏工具条',
+	'Hide &raquo;' => '隐藏 &raquo;',
 
 ## tmpl/cms/include/debug_toolbar/cache.tmpl
 	'Key' => 'Key',
@@ -4339,36 +4339,36 @@ use vars qw( @ISA %Lexicon );
 
 ## tmpl/cms/include/debug_toolbar/requestvars.tmpl
 	'Cookies' => 'Cookies',
-	'Variable' => 'Variable',
-	'No COOKIE data' => 'No COOKIE data',
-	'Input Parameters' => 'Input Parameters',
-	'No Input Parameters' => 'No Input Parameters',
+	'Variable' => '变量',
+	'No COOKIE data' => '没有COOKIE数据',
+	'Input Parameters' => '输入参数',
+	'No Input Parameters' => '没有输入参数',
 
 ## tmpl/cms/include/debug_toolbar/sql.tmpl
 
 ## tmpl/cms/include/display_options.tmpl
-	'Display Options' => '表示オプション',
-	'_DISPLAY_OPTIONS_SHOW' => '表示数',
+	'Display Options' => '显示选项',
+	'_DISPLAY_OPTIONS_SHOW' => '显示',
 	'[quant,_1,row,rows]' => '[quant,_1,行,行]',
-	'Compact' => '簡易',
-	'Expanded' => '詳細',
-	'Save display options' => '表示オプションを保存',
+	'Compact' => '简洁',
+	'Expanded' => '扩展',
+	'Save display options' => '保存显示选项',
 
 ## tmpl/cms/include/entry_table.tmpl
-	'Republish selected [_1] (r)' => '選択した[_1]の再構築',
-	'Last Modified' => '最終更新',
-	'Created' => '作成',
-	'View entry' => '記事を見る',
-	'View page' => 'ウェブページを表示',
-	'No entries could be found.' => '記事がありません。',
-	'<a href="[_1]">Create an entry</a> now.' => '<a href="[_1]">記事を作成</a>する。',
-	'No pages could be found. <a href="[_1]">Create a page</a> now.' => 'ウェブページが見つかりませんでした。<a href="[_1]">ウェブページの作成</a>',
+	'Republish selected [_1] (r)' => '重新发布选中的[_1] (r)',
+	'Last Modified' => '最后修改',
+	'Created' => '创建',
+	'View entry' => '查看文章',
+	'View page' => '查看页面',
+	'No entries could be found.' => '没有找到文章。',
+	'<a href="[_1]">Create an entry</a> now.' => '立即<a href="[_1]">创建文章</a>。',
+	'No pages could be found. <a href="[_1]">Create a page</a> now.' => '没有找到页面，立即<a href="[_1]">创建页面</a>',
 
 ## tmpl/cms/include/feed_link.tmpl
-	'Set Web Services Password' => 'Webサービスのパスワードを設定',
+	'Set Web Services Password' => '设置Web Services密码',
 
 ## tmpl/cms/include/footer.tmpl
-	'This is a beta version of Movable Type and is not recommended for production use.' => 'このMovable Typeはベータ版です。',
+	'This is a beta version of Movable Type and is not recommended for production use.' => '这个Movable Type是测试版，不建议在生产环境中使用。',
 	'http://www.movabletype.org' => 'http://www.movabletype.jp',
 	'MovableType.org' => 'MovableType.jp',
 	'http://plugins.movabletype.org/' => 'http://communities.movabletype.jp/plugins/',
@@ -4571,23 +4571,23 @@ use vars qw( @ISA %Lexicon );
 	'Select Filter' => 'フィルタを選択',
 
 ## tmpl/cms/list_entry.tmpl
-	'Entries Feed' => '記事フィード',
-	'Pages Feed' => 'ウェブページフィード',
-	'The entry has been deleted from the database.' => '記事をデータベースから削除しました。',
-	'The page has been deleted from the database.' => 'ウェブページをデータベースから削除しました。',
-	'Quickfilters' => 'クイックフィルタ',
-	'[_1] (Disabled)' => '[_1] (無効)',
-	'Showing only: [_1]' => '[_1]を表示',
-	'Remove filter' => 'フィルタしない',
-	'change' => '絞り込み',
-	'[_1] where [_2] is [_3]' => '[_2]が[_3]の[_1]',
-	'Show only entries where' => '記事を表示: ',
-	'Show only pages where' => 'ウェブページを表示: ',
-	'status' => 'ステータス',
-	'tag (exact match)' => 'タグ (完全一致)',
-	'tag (fuzzy match)' => 'タグ (あいまい検索)',
-	'asset' => 'アイテム',
-	'is' => 'が',
+	'Entries Feed' => '文章订阅',
+	'Pages Feed' => '页面订阅',
+	'The entry has been deleted from the database.' => '文章成功从数据库中删除。',
+	'The page has been deleted from the database.' => '页面成功从数据库中删除。',
+	'Quickfilters' => '快速筛选',
+	'[_1] (Disabled)' => '[_1] (禁用)',
+	'Showing only: [_1]' => '仅显示:[_1]',
+	'Remove filter' => '删除筛选',
+	'change' => '更改',
+	'[_1] where [_2] is [_3]' => '[_2] [_3] [_1]',
+	'Show only entries where' => '仅显示文章: ',
+	'Show only pages where' => '仅显示页面: ',
+	'status' => '状态',
+	'tag (exact match)' => '标签(完全匹配)',
+	'tag (fuzzy match)' => '标签(模糊匹配)',
+	'asset' => '资源',
+	'is' => '是',
 	'published' => '公開',
 	'unpublished' => '未公開',
 	'review' => '承認待ち',
@@ -4984,25 +4984,25 @@ use vars qw( @ISA %Lexicon );
 	'Blog Preferences' => '博客设置',
 
 ## tmpl/cms/widget/notification_dashboard.tmpl
-	'Messages from the system' => 'システムからのお知らせ',
+	'Messages from the system' => '来自此系统的消息',
 
 ## tmpl/cms/widget/personal_stats.tmpl
 	'Your <a href="[_1]">last entry</a> was [_2] in <a href="[_3]">[_4]</a>.' => '最後に記事を書いたのは[_2]です(ブログ: <a href="[_3]">[_4]</a> - <a href="[_1]">編集</a>)。',
 	'Your last entry was [_1] in <a href="[_2]">[_3]</a>.' => '最後に記事を書いたのは[_1]です(ブログ: <a href="[_2]">[_3]</a>)',
-	'<a href="[_1]">[quant,_2,entry,entries]</a>' => '<a href="[_1]">[quant,_2,記事,記事]</a>',
-	'[quant,_1,entry,entries]' => '記事[quant,_1,件,件]',
-	'<a href="[_1]">[quant,_2,page,pages]</a>' => '<a href="[_1]">[quant,_2,ページ,ページ]</a>',
-	'[quant,_1,page,pages]' => 'ページ[quant,_1,件,件]',
-	'<a href="[_1]">[quant,_2,comment,comments]</a>' => '<a href="[_1]">[quant,_2,コメント,コメント]</a>',
-	'[quant,_1,comment,comments]' => 'コメント[quant,_1,件,件]',
-	'<a href="[_1]">[quant,_2,draft,drafts]</a>' => '<a href="[_1]">[quant,_2,下書き,下書き]</a>',
-	'[quant,_1,draft,drafts]' => '[quant,_1,件,件]',
+	'<a href="[_1]">[quant,_2,entry,entries]</a>' => '<a href="[_1]">[quant,_2,文章,文章]</a>',
+	'[quant,_1,entry,entries]' => '文章[quant,_1,篇,篇]',
+	'<a href="[_1]">[quant,_2,page,pages]</a>' => '<a href="[_1]">[quant,_2,页面,页面]</a>',
+	'[quant,_1,page,pages]' => '页面[quant,_1,个,个]',
+	'<a href="[_1]">[quant,_2,comment,comments]</a>' => '<a href="[_1]">[quant,_2,评论,评论]</a>',
+	'[quant,_1,comment,comments]' => '评论[quant,_1,条,条]',
+	'<a href="[_1]">[quant,_2,draft,drafts]</a>' => '<a href="[_1]">[quant,_2,草稿,草稿]</a>',
+	'[quant,_1,draft,drafts]' => '[quant,_1,个,个]',
 
 ## tmpl/cms/widget/recent_blogs.tmpl
-	'No blogs could be found. [_1]' => 'ブログがありません。[_1]',
+	'No blogs could be found. [_1]' => '没有找到博客。[_1]',
 
 ## tmpl/cms/widget/recent_websites.tmpl
-	'[quant,_1,blog,blogs]' => 'ブログ[quant,_1,件,件]',
+	'[quant,_1,blog,blogs]' => '博客[quant,_1,个,个]',
 
 ## tmpl/cms/widget/site_stats.tmpl
 	'Stats for [_1]' => '查看状态: [_1]',
