@@ -21,3 +21,6 @@ body {
 #system-wide-menu .sub-menu {
 	font-size: 12px;
 }
+#utility-nav {
+	height: 32px;
+}
