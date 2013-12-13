@@ -4987,8 +4987,8 @@ use vars qw( @ISA %Lexicon );
 	'Messages from the system' => '来自此系统的消息',
 
 ## tmpl/cms/widget/personal_stats.tmpl
-	'Your <a href="[_1]">last entry</a> was [_2] in <a href="[_3]">[_4]</a>.' => '最後に記事を書いたのは[_2]です(ブログ: <a href="[_3]">[_4]</a> - <a href="[_1]">編集</a>)。',
-	'Your last entry was [_1] in <a href="[_2]">[_3]</a>.' => '最後に記事を書いたのは[_1]です(ブログ: <a href="[_2]">[_3]</a>)',
+	'Your <a href="[_1]">last entry</a> was [_2] in <a href="[_3]">[_4]</a>.' => '你最后于[_2]在<a href="[_3]">[_4]</a>中<a href="[_1]">撰写了文章。',
+	'Your last entry was [_1] in <a href="[_2]">[_3]</a>.' => '你最后于<a href="[_2]">[_3]</a>撰写了文章[_1]。',
 	'<a href="[_1]">[quant,_2,entry,entries]</a>' => '<a href="[_1]">[quant,_2,文章,文章]</a>',
 	'[quant,_1,entry,entries]' => '文章[quant,_1,篇,篇]',
 	'<a href="[_1]">[quant,_2,page,pages]</a>' => '<a href="[_1]">[quant,_2,页面,页面]</a>',
@@ -6429,28 +6429,28 @@ use vars qw( @ISA %Lexicon );
 	'Could not verify this app with Facebook: [_1]' => 'Facebookでこのアプリケーションを確認できません: [_1]',
 
 ## plugins/FacebookCommenters/tmpl/blog_config_template.tmpl
-	'Facebook Application Key' => 'Facebookアプリケーションキー',
+	'Facebook Application Key' => 'Facebook应用Key',
 	'The key for the Facebook application associated with your blog.' => 'ブログ関連付用Facebookアプリケーションキー',
-	'Edit Facebook App' => 'Facebookアプリ編集',
-	'Create Facebook App' => 'Facebookアプリ作成',
-	'Facebook Application Secret' => 'Facebookアプリケーションシークレット',
+	'Edit Facebook App' => '编辑Facebook应用',
+	'Create Facebook App' => '创建Facebook应用',
+	'Facebook Application Secret' => 'Facebook应用Secret',
 	'The secret for the Facebook application associated with your blog.' => 'ブログ関連付用Facebookアプリケーションシークレット',
 
 ## plugins/FormattedText/config.yaml
-	'Manage boilerplate.' => '定型文を管理します。',
+	'Manage boilerplate.' => '样板管理。',
 
 ## plugins/FormattedText/lib/FormattedText/App.pm
-	'Are you sure you want to delete the selected boilerplates?' => '定型文を削除してもよろしいですか？',
-	'My Boilerplate' => '自分の定型文',
+	'Are you sure you want to delete the selected boilerplates?' => '您确认想要删除选中的样板吗？',
+	'My Boilerplate' => '我的样板',
 
 ## plugins/FormattedText/lib/FormattedText/FormattedText.pm
-	'Boilerplates' => '定型文',
+	'Boilerplates' => '样板',
 	'The boilerplate \'[_1]\' is already in use in this blog.' => '[_1]という定型文は既にこのブログに存在しています。',
 
 ## plugins/FormattedText/tmpl/cms/edit_formatted_text.tmpl
-	'Edit Boilerplate' => '定型文の編集',
-	'Create Boilerplate' => '定型文の作成',
-	'This boilerplate has been saved.' => '定型文を保存しました。',
+	'Edit Boilerplate' => '编辑样板',
+	'Create Boilerplate' => '创建样板',
+	'This boilerplate has been saved.' => '这个样板已经保存。',
 	'Save changes to this boilerplate (s)' => '定型文への変更を保存 (s)',
 	q{The boilerplate '[_1]' is already in use in this blog.} => q{[_1]という定型文は既にこのブログに存在しています。},
 
@@ -6461,10 +6461,10 @@ use vars qw( @ISA %Lexicon );
 	'Add the "Insert Boilerplate" button to the TinyMCE.' => 'TinyMCE に「定型文の挿入」ボタンを追加します。',
 
 ## plugins/FormattedTextForTinyMCE/lib/FormattedTextForTinyMCE/App.pm
-	'Cannot load boilerplate.' => '定型文をロードできませんでした。',
+	'Cannot load boilerplate.' => '无法载入样板。',
 
 ## plugins/FormattedTextForTinyMCE/tmpl/extension.tmpl
-	'Select a Boilerplate' => '定型文を選択...',
+	'Select a Boilerplate' => '选择一个样板',
 
 ## plugins/GoogleAnalytics/config.yaml
 	'Site statistics plugin using Google Analytics.' => 'Google Analyticsからアクセス統計データを取得します。',
