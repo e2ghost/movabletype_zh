@@ -1321,7 +1321,7 @@ use vars qw( @ISA %Lexicon );
 
 ## lib/MT/CMS/Comment.pm
 	'Edit Comment' => '编辑评论',
-	'(untitled)' => '(タイトルなし)',
+	'(untitled)' => '(无标题)',
 	'No such commenter [_1].' => '[_1]というコメント投稿者は存在しません。',
 	'User \'[_1]\' trusted commenter \'[_2]\'.' => '\'[_1]\'がコメント投稿者\'[_2]\'を承認しました。',
 	'User \'[_1]\' banned commenter \'[_2]\'.' => '\'[_1]\'がコメント投稿者\'[_2]\'を禁止しました。',
@@ -1367,7 +1367,7 @@ use vars qw( @ISA %Lexicon );
 ## lib/MT/CMS/Dashboard.pm
 	'Error: This blog does not have a parent website.' => 'エラー: このブログにはウェブサイトがありません。',
 	'Not configured' => '尚未配置',
-	'Page Views' => 'ページビュー',
+	'Page Views' => '页面浏览数',
 
 ## lib/MT/CMS/Entry.pm
 	'*User deleted*' => '*已删除的用户*',
@@ -1378,7 +1378,7 @@ use vars qw( @ISA %Lexicon );
 	'Tag' => '标签',
 	'Entry Status' => '文章状态',
 	'Cannot load template.' => '无法载入模板。',
-	'Publish error: [_1]' => '再構築エラー: [_1]',
+	'Publish error: [_1]' => '发布出错: [_1]',
 	'Unable to create preview files in this location: [_1]' => 'プレビュー用のファイルをこの場所に作成できませんでした: [_1]',
 	'New [_1]' => '新しい[_1]',
 	'No such [_1].' => '[_1]が存在しません。',
@@ -3389,18 +3389,18 @@ use vars qw( @ISA %Lexicon );
 	q{Used to generate URLs (permalinks) for this website's archived entries. Choose one of the archive types used in this website's archive templates.} => q{記事にリンクするときのURLとして使われます。このウェブサイトで使われているアーカイブテンプレートの中から選択してください。},
 	'Publish With No Entries' => '記事がないアーカイブの公開',
 	'Publish category archive without entries' => '記事が含まれない場合でも、カテゴリ アーカイブを公開する',
-	'Module Settings' => 'モジュール設定',
-	'Server Side Includes' => 'サーバーサイドインクルード',
-	'None (disabled)' => '無効',
-	'PHP Includes' => 'PHPのインクルード',
-	'Apache Server-Side Includes' => 'ApacheのSSI',
-	'Active Server Page Includes' => 'ASPのインクルード',
-	'Java Server Page Includes' => 'JSPのインクルード',
-	'Module Caching' => 'モジュールのキャッシュ',
+	'Module Settings' => '模块设置',
+	'Server Side Includes' => 'Server Side Includes',
+	'None (disabled)' => '禁用',
+	'PHP Includes' => 'PHP Includes',
+	'Apache Server-Side Includes' => 'Apache SSI',
+	'Active Server Page Includes' => 'Active Server Page Includes',
+	'Java Server Page Includes' => 'Java Server Page Includes',
+	'Module Caching' => '模块缓存',
 	'Allow properly configured template modules to be cached to enhance publishing performance.' => '再構築の速度向上のために、テンプレートモジュール毎のキャッシュ設定を有効にする',
-	'Revision History' => '更新履歴',
+	'Revision History' => '修改记录',
 	'Note: Revision History is currently disabled at the system level.' => '備考: 更新履歴は現在システムレベルで無効となっています。',
-	'Revision history' => '更新履歴',
+	'Revision history' => '修改记录',
 	'Enable revision history' => '更新履歴を有効にする',
 	'Number of revisions per entry/page' => '記事/ページ更新履歴数',
 	'Number of revisions per template' => 'テンプレート更新履歴数',
@@ -3725,8 +3725,8 @@ use vars qw( @ISA %Lexicon );
 ## tmpl/cms/dialog/theme_element_detail.tmpl
 
 ## tmpl/cms/edit_asset.tmpl
-	'Edit Asset' => 'アイテムの編集',
-	'Your changes have been saved.' => '変更を保存しました。',
+	'Edit Asset' => '编辑资源',
+	'Your changes have been saved.' => '您做的修改已经保存。',
 	'Stats' => '情報',
 	'[_1] - Created by [_2]' => '作成: [_2] - [_1]',
 	'[_1] - Modified by [_2]' => '更新: [_2] - [_1]',
@@ -3940,13 +3940,13 @@ use vars qw( @ISA %Lexicon );
 	'Some [_1] in the revision could not be loaded because they have been removed.' => '履歴データ内に、削除されたために読み込めなかった[_1]があります。',
 	'This post was held for review, due to spam filtering.' => 'この投稿はスパムフィルタリングにより承認待ちになっています。',
 	'This post was classified as spam.' => 'この投稿はスパムと判定されました。',
-	'Change Folder' => 'フォルダの変更',
-	'Unpublished (Draft)' => '未公開(原稿)',
-	'Unpublished (Review)' => '未公開(承認待ち)',
-	'Unpublished (Spam)' => '未公開(スパム)',
-	'Revision: <strong>[_1]</strong>' => '更新履歴: <strong>[_1]</strong>',
-	'View revisions of this [_1]' => '[_1]の更新履歴を表示',
-	'View revisions' => '更新履歴を表示',
+	'Change Folder' => '改变目录',
+	'Unpublished (Draft)' => '未公开(草稿)',
+	'Unpublished (Review)' => '未公开(待审)',
+	'Unpublished (Spam)' => '未公开(垃圾)',
+	'Revision: <strong>[_1]</strong>' => '更新记录: <strong>[_1]</strong>',
+	'View revisions of this [_1]' => '查看[_1]的更新记录',
+	'View revisions' => '查看更新记录',
 	'No revision(s) associated with this [_1]' => '[_1]の更新履歴が見つかりません',
 	'[_1] - Published by [_2]' => '公開: [_2] - [_1]',
 	'[_1] - Edited by [_2]' => '編集: [_2] - [_1]',
@@ -4325,7 +4325,7 @@ use vars qw( @ISA %Lexicon );
 	'View this commenter&rsquo;s profile' => '查看这个评论者的档案',
 
 ## tmpl/cms/include/copyright.tmpl
-	'Copyright &copy; 2001 Six Apart. All Rights Reserved.' => 'Copyright &copy; 2001 Six Apart. All Rights Reserved.  中文翻译 by <a href="http://www.45eggs.com" target="_blank">Ethan/a>.',
+	'Copyright &copy; 2001 Six Apart. All Rights Reserved.' => 'Copyright &copy; 2001 Six Apart. All Rights Reserved.  中文翻译 by <a href="http://www.45eggs.com" target="_blank">Ethan</a>.',
 
 ## tmpl/cms/include/debug_hover.tmpl
 	'Hide Toolbar' => '隐藏工具条',
