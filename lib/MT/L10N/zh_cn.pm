@@ -308,8 +308,8 @@ use vars qw( @ISA %Lexicon );
 	'Your comment has been received and held for review by a blog administrator.' => 'コメントは現在承認されるまで公開を保留されています。',
 	'Comment Submission Error' => 'コメント投稿エラー',
 	'Your comment submission failed for the following reasons: [_1]' => 'コメントを投稿できませんでした。エラー: [_1]',
-	'Back' => '戻る',
-	'Return to the <a href="[_1]">original entry</a>.' => '<a href="[_1]">元の記事</a>に戻る',
+	'Back' => '返回',
+	'Return to the <a href="[_1]">original entry</a>.' => '返回<a href="[_1]">原始文章</a>',
 
 ## default_templates/comment_throttle.mtml
 	'If this was an error, you can unblock the IP address and allow the visitor to add it again by logging in to your Movable Type installation, choosing Blog Config - IP Banning, and deleting the IP address [_1] from the list of banned addresses.' => 'これが間違いである場合は、Movable Typeにサインインして、ブログの設定画面に進み、禁止IPリストからIPアドレスを削除してください。',
@@ -1036,9 +1036,9 @@ use vars qw( @ISA %Lexicon );
 	'Error creating thumbnail file: [_1]' => 'サムネイルを作成できませんでした: [_1]',
 	'%f-thumb-%wx%h-%i%x' => '%f-thumb-%wx%h-%i%x',
 	'Cannot load image #[_1]' => 'ID:[_1]の画像をロードできませんでした。',
-	'View image' => '表示',
+	'View image' => '查看',
 	'Permission denied setting image defaults for blog #[_1]' => 'ブログ(ID:[_1])に画像に関する既定値を保存する権限がありません。',
-	'Thumbnail image for [_1]' => '[_1]のサムネイル画像',
+	'Thumbnail image for [_1]' => '[_1]的缩略图',
 	'Saving [_1] failed: [_2]' => '[_1]を保存できませんでした: [_2]',
 	'Invalid basename \'[_1]\'' => 'ファイル名\'[_1]\'は不正です。',
 	'Error writing to \'[_1]\': [_2]' => '\'[_1]\'に書き込めませんでした: [_2]',
@@ -1233,13 +1233,13 @@ use vars qw( @ISA %Lexicon );
 	'Extension changed from [_1] to [_2]' => '拡張子が[_1]から[_2]に変更されました',
 	'Upload File' => '上传文件',
 	'Cannot load file #[_1].' => 'ID:[_1]のファイルをロードできません。',
-	'No permissions' => '権限がありません。',
+	'No permissions' => '没有权限',
 	'File \'[_1]\' uploaded by \'[_2]\'' => '\'[_2]\'がファイル\'[_1]\'をアップロードしました。',
 	'File \'[_1]\' (ID:[_2]) deleted by \'[_3]\'' => '\'[_3]\'がファイル\'[_1]\'(ID:[_2])を削除しました。',
 	'Untitled' => 'タイトルなし',
 	'Archive Root' => 'アーカイブパス',
 	'Site Root' => 'サイトパス',
-	'Please select a file to upload.' => 'アップロードするファイルを選択してください。',
+	'Please select a file to upload.' => '请选择要上传的文件',
 	'Invalid filename \'[_1]\'' => 'ファイル名\'[_1]\'が不正です。',
 	'Please select an audio file to upload.' => 'アップロードするオーディオファイルを選択してください。',
 	'Please select an image to upload.' => 'アップロードする画像を選択してください。',
@@ -2086,9 +2086,9 @@ use vars qw( @ISA %Lexicon );
 	'plugin' => 'プラグイン',
 	'Message' => 'ログ',
 	'By' => 'ユーザー',
-	'Class' => '分類',
+	'Class' => '分类',
 	'Level' => 'レベル',
-	'Metadata' => 'メタデータ',
+	'Metadata' => '元数据',
 	'Logs on This Website' => 'ウェブサイトのログ',
 	'Show only errors' => 'エラーだけを表示',
 
@@ -2724,11 +2724,11 @@ use vars qw( @ISA %Lexicon );
 	'Last' => '最后',
 
 ## mt-static/plugins/FormattedTextForTinyMCE/extension.js
-	'Insert Boilerplate' => '定型文の挿入',
+	'Insert Boilerplate' => '新增样板',
 
 ## mt-static/plugins/FormattedTextForTinyMCE/langs/template.js
-	'Boilerplate' => '定型文',
-	'Select Boilerplate' => '定型文を選択...',
+	'Boilerplate' => '样板',
+	'Select Boilerplate' => '选择样板',
 
 ## mt-static/plugins/Loupe/js/vendor.js
 
@@ -3979,22 +3979,22 @@ use vars qw( @ISA %Lexicon );
 	'Converting to rich text may result in changes to your current document.' => 'リッチテキストに変換すると、現在のHTML構造に変更が生じる可能性があります。',
 	'Make primary' => 'メインカテゴリにする',
 	'Fields' => '字段',
-	'Reset display options to blog defaults' => '表示オプションをブログの既定値にリセット',
-	'Reset defaults' => '既定値にリセット',
+	'Reset display options to blog defaults' => '恢复默认显示选项',
+	'Reset defaults' => '恢复默认设置',
 	'Permalink:' => '永久链接:',
 	'Share' => '分享',
-	'Format:' => 'フォーマット:',
+	'Format:' => '格式:',
 	'(comma-delimited list)' => '(カンマ区切りリスト)',
 	'(space-delimited list)' => '(スペース区切りリスト)',
 	q{(delimited by '[_1]')} => q{([_1]で区切る)},
 	'Not specified' => '指定されていません',
 	'None selected' => '選択されていません',
 	'Auto-saving...' => '正在自动保存...',
-	'Last auto-save at [_1]:[_2]:[_3]' => '[_1]:[_2]:[_3]に自動保存済み',
+	'Last auto-save at [_1]:[_2]:[_3]' => '上次自动保存时间为 [_1]:[_2]:[_3]',
 
 ## tmpl/cms/edit_entry_batch.tmpl
-	'Save these [_1] (s)' => '[_1]の保存',
-	'Published Date' => '公開日',
+	'Save these [_1] (s)' => '保存[_1]',
+	'Published Date' => '发布时间',
 
 ## tmpl/cms/edit_folder.tmpl
 	'Edit Folder' => '编辑文件夹',
@@ -4225,10 +4225,10 @@ use vars qw( @ISA %Lexicon );
 	'Custom...' => 'カスタム...',
 
 ## tmpl/cms/include/asset_replace.tmpl
-	q{A file named '[_1]' already exists. Do you want to overwrite this file?} => q{同名のアイテム'[_1]'がすでに存在します。上書きしますか?},
-	'Yes (s)' => 'はい (s)',
-	'Yes' => 'はい',
-	'No' => 'いいえ',
+	q{A file named '[_1]' already exists. Do you want to overwrite this file?} => q{已经存在相同名称 '[_1]' 的文件，您是否要覆盖它？},
+	'Yes (s)' => '是的(s)',
+	'Yes' => '是的',
+	'No' => '否',
 
 ## tmpl/cms/include/asset_table.tmpl
 	'Delete selected assets (x)' => '選択したアイテムを削除',
@@ -4244,11 +4244,11 @@ use vars qw( @ISA %Lexicon );
 	'Your system or [_1] administrator needs to publish the [_1] before you can upload files. Please contact your system or [_1] administrator.' => 'ファイルアップロードができるように、システム、または[_1]管理者が[_1]を再構築する必要があります。システム、または[_1]管理者に連絡してください。',
 	q{Cannot write to '[_1]'. Image upload is possible, but thumbnail is not created.} => q{ファイルのアップロードは可能ですが、'[_1]'への書き込みが行えないため、画像ファイルのサムネイルを作成する事ができません。},
 	q{Asset file('[_1]') has been uploaded.} => q{アイテム('[_1]')がアップロードされました。},
-	'Select File to Upload' => 'アップロードするファイルを選択',
+	'Select File to Upload' => '请选择要上传的文件',
 	'_USAGE_UPLOAD' => 'アップロード先には、サブディレクトリを指定することが出来ます。指定されたディレクトリが存在しない場合は、作成されます。',
-	'Choose Folder' => 'フォルダの選択',
-	'Upload (s)' => 'アップロード (s)',
-	'Upload' => 'アップロード',
+	'Choose Folder' => '选择目录',
+	'Upload (s)' => '上传文件(s)',
+	'Upload' => '上传文件',
 	'[_1] contains a character that is invalid when used in a directory name: [_2]' => '[_1]のディレクトリ名として正しくない文字が含まれています: [_2]',
 
 ## tmpl/cms/include/author_table.tmpl
@@ -5050,7 +5050,7 @@ use vars qw( @ISA %Lexicon );
 	'Turn on OpenID for your Yahoo! Japan account now' => 'Yahoo! JAPANのOpenIDを取得してください。',
 
 ## tmpl/comment/error.tmpl
-	'Back (s)' => '戻る (s)',
+	'Back (s)' => '返回(s)',
 
 ## tmpl/comment/login.tmpl
 	'Sign in to comment' => 'サインインしてください',
@@ -5429,10 +5429,10 @@ use vars qw( @ISA %Lexicon );
 	'Professional Website' => 'プロフェッショナル ウェブサイト',
 	'Header' => 'ヘッダー',
 	'Footer' => 'フッター',
-	'Entry Detail' => '記事の詳細',
-	'Entry Metadata' => '記事のメタデータ',
-	'Page Detail' => 'ウェブページの詳細',
-	'Footer Links' => 'フッターのリンク',
+	'Entry Detail' => '文章详情',
+	'Entry Metadata' => '文章元数据',
+	'Page Detail' => '页面详情',
+	'Footer Links' => '底部链接',
 	'Powered By (Footer)' => 'Powered By (フッター)',
 	'Recent Entries Expanded' => '最近の記事 (拡張)',
 	'Main Sidebar' => 'メインサイドバー',
@@ -6050,14 +6050,14 @@ use vars qw( @ISA %Lexicon );
 ## addons/Community.pack/templates/global/new_password.mtml
 
 ## addons/Community.pack/templates/global/new_password_reset_form.mtml
-	'Go Back (x)' => '戻る (x)',
+	'Go Back (x)' => '返回(x)',
 
 ## addons/Community.pack/templates/global/profile_edit_form.mtml
 	'Go <a href="[_1]">back to the previous page</a> or <a href="[_2]">view your profile</a>.' => '<a href="[_1]">元のページに戻る</a> / <a href="[_2]">プロフィールを表示する</a>',
 
 ## addons/Community.pack/templates/global/profile_error.mtml
 	'ERROR MSG HERE' => '＊エラーメッセージを記述してください＊',
-	'Go Back' => '戻る',
+	'Go Back' => '返回',
 
 ## addons/Community.pack/templates/global/profile_feed.mtml
 	'Posted [_1] to [_2]' => '[_2]に[_1]を作成しました。',
@@ -6296,7 +6296,7 @@ use vars qw( @ISA %Lexicon );
 	'Specify the CSV-formatted source file for upload' => 'アップロードするCSV形式のソースファイルを指定してください。',
 	'Source File Encoding' => 'ソースファイルのエンコーディング',
 	'Movable Type will automatically try to detect the character encoding of your import file.  However, if you experience difficulties, you can set the character encoding explicitly.' => 'Movable Typeはインポートするファイルの文字コードを自動的に検出します。問題が起きたときには、明示的に文字コードを指定することもできます。',
-	'Upload (u)' => 'アップロード (u)',
+	'Upload (u)' => '上传文件(u)',
 
 ## addons/Enterprise.pack/tmpl/cfg_ldap.tmpl
 	'Authentication Configuration' => '認証の構成',
@@ -6641,7 +6641,7 @@ use vars qw( @ISA %Lexicon );
 	'Mobile Dashboard' => 'モバイルダッシュボード',
 	'Rich text editor is not supported by your browser. Continue with  HTML editor ?' => 'この機能は、お使いのブラウザに対応していません。',
 	'Syntax highlight is not supported by your browser. Disable to continue ?' => 'お使いのブラウザは、コードのハイライト表示に対応していません。無効にして編集しますか？',
-	'[_1] View' => '[_1]表示',
+	'[_1] View' => '[_1]查看',
 
 ## plugins/SmartphoneOption/lib/Smartphone/CMS/Entry.pm
 	'Re-Edit' => '重新编辑',
